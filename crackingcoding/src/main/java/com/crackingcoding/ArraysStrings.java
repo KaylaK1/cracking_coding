@@ -1,12 +1,16 @@
+package com.crackingcoding;
+
 import java.util.HashMap;
 import java.util.Map;
 
 public class ArraysStrings {
-    /* Implement an Algo to determine if a string has all unique characters
+    /*
+     * Implement an Algo to determine if a string has all unique characters
      * Assuming ASCII - how do I account for Unicode?
      * 
      */
-    // O(N) Time O(1) Space - since we use a bit vector that won't grow beyond the size of 25 char ints - rewrite
+    // O(N) Time O(1) Space - since we use a bit vector that won't grow beyond the
+    // size of 25 char ints - rewrite
     public boolean isUniqueChars(String str) {
         int checker = 0;
         for (int i = 0; i < str.length(); i++) {
@@ -18,14 +22,14 @@ public class ArraysStrings {
         }
         return true;
     }
-    
+
     // O(n) space - the size of the string to Map
     public boolean isUniqueCharsMap(String str) {
         Map<Character, Boolean> hashMap = new HashMap<Character, Boolean>();
 
         for (int i = 0; i < str.length(); i++) {
             char c = str.charAt(i);
-            
+
             if (hashMap.containsKey(c)) {
                 return false;
             }
@@ -34,7 +38,9 @@ public class ArraysStrings {
         return true;
     }
 
-    /* Check Permutation: Given two Strngs, determine if one is a permutation of the other
+    /*
+     * Check Permutation: Given two Strngs, determine if one is a permutation of the
+     * other
      * Is it case sensitive? Whitespace significant? Assume yes.
      * "god___" !== "dog"
      * Permutation: Same Characters - diff order
@@ -43,18 +49,19 @@ public class ArraysStrings {
     String sort(String s) {
         char[] content = s.toCharArray(); // O(n) time and space
         java.util.Arrays.sort(content); // O(nlogn) t O(logn) space
-        return new String(content);  // O(n) T & S
+        return new String(content); // O(n) T & S
     }
 
     boolean permutation(String s, String t) {
-        if (s.length() != t.length()) { return false; }
+        if (s.length() != t.length()) {
+            return false;
+        }
 
-        return sort(s).equals(sort(t)); // O(n) space for each char array - but space could be considered reclaimed before the next sort call
+        return sort(s).equals(sort(t)); // O(n) space for each char array - but space could be considered reclaimed
+                                        // before the next sort call
         // But the space for both strings exist for the comparison
         // O(n) time for equals
     } // Overall O(nlogn) time O(n) space
-
-    
 
     public static void main(String[] args) {
         ArraysStrings testBby = new ArraysStrings();
