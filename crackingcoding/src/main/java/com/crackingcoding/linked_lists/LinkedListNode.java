@@ -2,15 +2,15 @@ package com.crackingcoding.linked_lists;
 
 public class LinkedListNode {
     public LinkedListNode next, prev, last;
-    public int data;
+    public Character data;
 
-    public LinkedListNode(int d, LinkedListNode n, LinkedListNode p) {
+    public LinkedListNode(Character d, LinkedListNode n, LinkedListNode p) {
         data = d;
         setNext(n);
         setPrevious(p);
     }
 
-    public LinkedListNode(int d) {
+    public LinkedListNode(Character d) {
         data = d;
     }
 
@@ -43,4 +43,5 @@ public class LinkedListNode {
 
         return head2;
     }
+
 }
