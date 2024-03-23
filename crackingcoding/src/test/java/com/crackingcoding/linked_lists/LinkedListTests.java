@@ -1,11 +1,10 @@
-package com.crackingcoding;
+package com.crackingcoding.linked_lists;
 
 import java.util.Arrays;
 import java.util.List;
 
 import org.junit.jupiter.api.Test; // need this for DisplayName to work.
 import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.mockito.Mock;
 

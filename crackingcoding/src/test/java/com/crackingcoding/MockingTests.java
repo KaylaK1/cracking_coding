@@ -1,3 +1,5 @@
+// Bad code - rewrite
+
 package com.crackingcoding;
 
 import org.junit.jupiter.api.Test;
@@ -7,7 +9,6 @@ import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.spy;
 import static org.mockito.Mockito.when;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

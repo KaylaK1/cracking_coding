@@ -1,0 +1,97 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Java",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ]
+        },
+        {
+            "name": "Java Console App",
+            "type": "java",
+            "request": "launch",
+            "stopOnEntry": true,
+            "jdkPath": "${env:JAVA_HOME}/bin",
+            "cwd": "${fileDirname}",
+            "startupClass": "${fileBasenameNoExtension}",
+            "classpath": [
+                ".",
+                "${fileDirname}"
+            ],
+            "externalConsole": true
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "crackingcoding.src.main.java.com.crackingcoding.App",
+            "projectName": "cracking_coding_62193842"
+        },
+        {
+            "type": "java",
+            "name": "ArraysStrings",
+            "request": "launch",
+            "mainClass": "crackingcoding.src.main.java.com.crackingcoding.ArraysStrings",
+            "projectName": "cracking_coding_62193842"
+        },
+        {
+            "type": "java",
+            "name": "MergeSort",
+            "request": "launch",
+            "mainClass": "crackingcoding.src.main.java.com.crackingcoding.MergeSort",
+            "projectName": "cracking_coding_62193842"
+        },
+        {
+            "type": "java",
+            "name": "Fibonacci",
+            "request": "launch",
+            "mainClass": "crackingcoding.src.main.java.com.crackingcoding.recursion.Fibonacci",
+            "projectName": "cracking_coding_62193842"
+        },
+        {
+            "type": "java",
+            "name": "App(1)",
+            "request": "launch",
+            "mainClass": "com.crackingcoding.App",
+            "projectName": "crackingcoding"
+        },
+        {
+            "type": "java",
+            "name": "ArraysStrings(1)",
+            "request": "launch",
+            "mainClass": "com.crackingcoding.ArraysStrings",
+            "projectName": "crackingcoding"
+        },
+        {
+            "type": "java",
+            "name": "MergeSort(1)",
+            "request": "launch",
+            "mainClass": "com.crackingcoding.MergeSort",
+            "projectName": "crackingcoding"
+        },
+        {
+            "type": "java",
+            "name": "Fibonacci(1)",
+            "request": "launch",
+            "mainClass": "com.crackingcoding.recursion.Fibonacci",
+            "projectName": "crackingcoding"
+        }
+    ]
+}
